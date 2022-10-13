@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Kanit:wght@300&family=Open+Sans&family=Poppins:ital,wght@1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.body.on{
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #232526, #414345);
+}
+h1{
+    color:  #2c5364;
+    font-size: 10rem;
+    text-align: center;
+    opacity: 0.4;
+}
+.h1.on{
+    color: #915914;
+}
+form{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    max-width: 100%;
+    width: 400px;
+}
+input{
+    color: #444;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: #d5d5d5;
+}
+.todos{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+li{
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+li.completed{
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+small{
+    color: #2c5364;
+    margin-top: 3rem;
+    text-align: center;
+}
+.small.on{
+    color: #915914;
+}
+.dark{
+    width: 30px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+@media (max-width:550px) {
+    body{
+        padding: 0 10px;
+        background: #ADA996;
+    }
+    .body.on{
+        background-color: #232526;
+    }
+    h1{
+        font-size: 6rem;
+    }
+}
